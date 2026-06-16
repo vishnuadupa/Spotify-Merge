@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: oklch(0.99 0 0); /* Pure white paper */
+  --foreground: oklch(0.15 0 0);
+  
+  --color-paper-1: oklch(0.99 0 0);
+  --color-paper-2: oklch(0.97 0 0);
+  --color-paper-3: oklch(0.95 0 0);
+  
+  --color-accent: oklch(0.45 0.2 260); /* Cobalt Blue */
+  --color-accent-hover: oklch(0.40 0.2 260);
+  
+  --color-border: oklch(0.90 0 0);
+  --color-text-dim: oklch(0.45 0 0);
+  --color-text-invert: oklch(0.99 0 0);
+  
+  --font-display: var(--font-geist-sans);
+  --font-body: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-paper-1: var(--color-paper-1);
+  --color-paper-2: var(--color-paper-2);
+  --color-paper-3: var(--color-paper-3);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-border: var(--color-border);
+  --color-text-dim: var(--color-text-dim);
+  --font-sans: var(--font-display);
+  --font-mono: var(--font-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: oklch(0.12 0 0); /* Deep charcoal */
+    --foreground: oklch(0.95 0 0);
+    
+    --color-paper-1: oklch(0.12 0 0);
+    --color-paper-2: oklch(0.16 0 0);
+    --color-paper-3: oklch(0.20 0 0);
+    
+    --color-accent: oklch(0.65 0.2 260); /* Bright Cobalt */
+    --color-accent-hover: oklch(0.70 0.2 260);
+    
+    --color-border: oklch(0.25 0 0);
+    --color-text-dim: oklch(0.65 0 0);
+    --color-text-invert: oklch(0.12 0 0);
+  }
+}
+
+html, body {
+  overflow-x: clip;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+/* Hallmark utilities */
+.text-balance { text-wrap: balance; }
+.text-pretty { text-wrap: pretty; }
