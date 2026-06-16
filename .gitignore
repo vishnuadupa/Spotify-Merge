@@ -35,13 +35,14 @@ old_account_data/
 # Ignore everything in the root by default
 /*
 
-# Whitelist ONLY v2 and essential root documentation
+# Whitelist ONLY v2, web, and essential root documentation
 !/.gitignore
 !/README.md
 !/SPOTIFY_API_REFERENCE.md
 !/SPOTIFY_API_RULES.md
 !/spotify-api-schema.yaml
 !/v2/
+!/web/
 
 # But ignore specific things in v2 just in case
 v2/__pycache__/
