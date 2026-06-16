@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Library Manager — take control of your Spotify library</title>
+  <link rel="stylesheet" href="/static/landing.css">
+</head>
+<body>
+
+<!-- ── nav ── -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <span class="brand"><span class="dot">◎</span> Library Manager</span>
+    <div class="nav-cta">
+      <a href="#how" class="nav-link hide-sm">How it works</a>
+      <a href="#features" class="nav-link hide-sm">Features</a>
+      <a href="/app" class="btn btn-primary">Open the app →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── hero ── -->
+<header class="hero">
+  <div class="hero-glow"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">● Local-first · your changes, your control</span>
+    <h1>Your entire Spotify library, <span class="hl">finally organized.</span></h1>
+    <p class="lede">
+      Pull every song from your liked tracks and playlists into one workspace.
+      Sort by language and genre, build playlists by dragging songs across a board,
+      and push it all back to Spotify — only when you're ready.
+    </p>
+    <div class="hero-cta">
+      <a href="/app" class="btn btn-primary btn-lg">Open the app →</a>
+      <a href="#how" class="btn btn-secondary btn-lg">See how it works</a>
+    </div>
+    <p class="hero-note">Runs locally on your machine. Nothing changes on Spotify until you click Push.</p>
+  </div>
+
+  <!-- abstract product visual: songs flowing into a playlist (no fake browser chrome) -->
+  <div class="wrap showcase">
+    <div class="board" aria-hidden="true">
+      <div class="board-col">
+        <h4>◎ Your library</h4>
+        <div class="scard" style="--h:260"><span class="sw"></span><span class="sl"></span></div>
+        <div class="scard" style="--h:30"><span class="sw"></span><span class="sl s"></span></div>
+        <div class="scard" style="--h:150"><span class="sw"></span><span class="sl"></span></div>
+        <div class="scard" style="--h:330"><span class="sw"></span><span class="sl s"></span></div>
+        <div class="scard" style="--h:200"><span class="sw"></span><span class="sl"></span></div>
+      </div>
+      <div class="board-col target">
+        <h4>🎧 Workout</h4>
+        <div class="scard tag" style="--h:45"><span class="sw"></span><span class="sl"></span></div>
+        <div class="scard tag" style="--h:90"><span class="sw"></span><span class="sl s"></span></div>
+        <div class="scard ghost">drop songs here</div>
+      </div>
+      <div class="board-col">
+        <h4>🌙 Late night</h4>
+        <div class="scard" style="--h:250"><span class="sw"></span><span class="sl s"></span></div>
+        <div class="scard ghost">drop songs here</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── features ── -->
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Everything Spotify won't let you do in one place.</h2>
+      <p>A focused workspace for curating your library — not a player, a curator.</p>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div class="ic">◎</div>
+        <h3>See your whole library</h3>
+        <p>Liked songs, playlists you own, and playlists you follow — every track pulled into one searchable list with album art and details.</p>
+      </div>
+      <div class="feature">
+        <div class="ic">⌘</div>
+        <h3>Sort by language &amp; genre</h3>
+        <p>Songs grouped into language tabs, then filtered by genre — so your Telugu, Hindi, Korean and English tracks aren't all jumbled together.</p>
+      </div>
+      <div class="feature">
+        <div class="ic">⠿</div>
+        <h3>Drag songs into playlists</h3>
+        <p>A board of your playlists sits beside your library. Drag a song — or select many — and drop them straight into the playlist you want.</p>
+      </div>
+      <div class="feature">
+        <div class="ic">↑</div>
+        <h3>Local-first, push when ready</h3>
+        <p>Every edit is staged on your machine. Review it, undo anything, then push once. Matching playlists merge by name; new ones get created.</p>
+      </div>
+      <div class="feature">
+        <div class="ic">⇄</div>
+        <h3>Move between accounts</h3>
+        <p>Pull from one account and push to another — migrate your whole library across accounts, in either direction, no copy-paste.</p>
+      </div>
+      <div class="feature">
+        <div class="ic">◈</div>
+        <h3>Visualize your taste</h3>
+        <p>A mood map plots your songs so you can spot clusters and filter by feel — turn a vibe into a playlist in a couple of clicks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── how it works ── -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Three steps, start to finish.</h2>
+      <p>No accounts to create here, no data leaves your machine. You bring a Spotify app key; the app does the rest.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Connect</h3>
+        <p>Paste your Spotify credentials once and connect your account. Connect a second account too if you're migrating.</p>
+        <div class="bar"></div>
+      </div>
+      <div class="step">
+        <h3>Load your library</h3>
+        <p>One click pulls in every song, playlist, and the data we can get — sorted into language and genre as it arrives.</p>
+        <div class="bar"></div>
+      </div>
+      <div class="step">
+        <h3>Organize &amp; push</h3>
+        <p>Drag songs into playlists, tidy as long as you like, then push everything back to Spotify in one go.</p>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── closing CTA ── -->
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <div class="glow"></div>
+      <h2>Ready to sort out your library?</h2>
+      <p>Open the workspace and pull in your songs. It runs locally — you stay in control the whole way.</p>
+      <div class="hero-cta">
+        <a href="/app" class="btn btn-primary btn-lg">Open the app →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── footer ── -->
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span class="brand"><span class="dot">◎</span> Library Manager</span>
+    <small>Runs locally · your data never leaves your machine · not affiliated with Spotify</small>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Secrets & Caches
+config.json
+.cache-old*
+.cache-new*
+.migration_state.json
+
+# Databases
+*.db
+*.db-shm
+*.db-wal
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Agents
+.agents/
+.claude/
+skills-lock.json
+
+# User Data
+*.json
+old_account_data/
+
+# Ignore everything in the root by default
+/*
+
+# Whitelist ONLY v2 and essential root documentation
+!/.gitignore
+!/README.md
+!/SPOTIFY_API_REFERENCE.md
+!/SPOTIFY_API_RULES.md
+!/spotify-api-schema.yaml
+!/v2/
+
+# But ignore specific things in v2 just in case
+v2/__pycache__/
+v2/config.json
